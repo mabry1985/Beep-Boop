@@ -6,6 +6,7 @@
     <script src="js/scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Press+Start+2P&display=swap" rel="stylesheet">
     <title>Beep Boop!</title>
   </head>
   <body>
@@ -18,10 +19,10 @@
       </div>
       <form id="formOne">
         <label for="userInput">Enter a number:</label>
-        <input id=input type="number" name="userInput" value="">
+        <input id=input type="number" min=0 name="userInput" value="">
         <button type="submit" class="btn" name="button">FEED ME!</button>
       </form>
-      <div class="output-box">
+      <div class="output-box scrollbar" id="content-scroll">
         <ul class="output">
       </div>
     </div>
