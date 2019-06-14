@@ -15,17 +15,19 @@ background-color: transparent;
 }
 
 #formOne {
-padding-left; 40px;S
+  position: relative;
+  left: 380px;
+  top: 600px;
 
 }
 
 .output-box {
-  left:500px;
-  top:650px;
+  left:149px;
+  top:615px;
   position: relative;
-  height:120px;
-  width:120px;
-  border:1px solid #ccc;
+  height:200px;
+  width:867px;
+  /* border:1px solid #ccc; */
   font:16px/26px Georgia, Garamond, Serif;
   overflow:auto
 }
