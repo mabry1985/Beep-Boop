@@ -10,8 +10,6 @@ function beepBoop(userNumber) {
         $('.output').append('<li> BOOP! </li>');
       } else if (number.indexOf('1') > -1) {
         $('.output').append('<li> BEEP! </li>');
-      } else if (parseInt(number % 3 === 0)) {
-        $('.output').append("<li> I'm sorry,<span class ='insert'></span>. I'm afraid I can't do that</li>");
       } else {
         $('.output').append('<li>' + i + '</li>');
         return;

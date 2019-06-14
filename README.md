@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application takes a number from a user and counts up to it one at a time. Anytime the number contains a 1 it returns 'BEEP!', if it contains a 2 it returns 'BOOP!', if it contains a 3 it returns 'I'm sorry, Dave....'. If there are more than one of these numbers then the highest of the 3 overrides the the others. E.g.: 12 would return BOOP! and not BEEP!_
+_This application takes a number from a user and counts up to it one at a time. Anytime the number contains a 1 it returns 'BEEP!', if it contains a 2 it returns 'BOOP!', if it contains a 3 it returns 'I'm sorry, Dave....'. If there are more than one of these numbers then the highest of the 3 overrides the others. Example: 12 would return BOOP! and not BEEP!_
 
 ## Setup/Installation Requirements
 
@@ -22,7 +22,7 @@ _This application takes a number from a user and counts up to it one at a time. 
 | The program looks for the number 2 and replaces it with "Boop!" | 2 | Boop! |
 | The program looks for the number 1 and replaces it with "Beep!" | 1 | Beep! |
 | The program looks for a 3, 2, or 1 in any of the digits as it counts and returns respective output | 10,20,30 | Beep! Boop!, I'm sorry, Dave... |
-| The program returns the output to the user in the DOM | 3 | 0, Beep!, Boop!, I'm sorry, Dave... is printed to index.html |
+| The program returns the output to the user in the DOM | 3 | 0, Beep! Boop!, I'm sorry, Dave... is printed to index.html |
 
 
 ## Known Bugs
