@@ -4,6 +4,8 @@ function beepBoop(userNumber) {
       console.log(`Im sorry, Dave. I'm afraid I can't do that.`);
     } else if (index === 2) {
       console.log('Boop!');
+    } else if (index === 1) {
+      console.log('Beep!');
     } else {
       console.log(index);
     }
