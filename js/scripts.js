@@ -1,3 +1,5 @@
+//backend logic
+
 function beepBoop(userNumber) {
   for (var i = 0; i < userNumber + 1; i++) {
     var numbers = i.toString().split(' ');
@@ -17,3 +19,15 @@ function beepBoop(userNumber) {
     });
   };
 };
+
+//frontend logic
+
+$(document).ready(function () {
+  $('#formOne').submit(function (event) {
+    event.preventDefault();
+    var userInput = parseInt($('#input').val());
+    var answer = beepBoop(userInput)
+    $('.output').html("<li>" + answer + "</li>");
+    console.log(answer);
+  });
+});
