@@ -5,16 +5,14 @@ function beepBoop(userNumber) {
     var numbers = i.toString().split(' ');
     numbers.forEach(function (number) {
       if (number.indexOf('3') > -1) {
-        console.log(`I'm sorry, Dave. I'm afraid I can't do that.`);
-        return;
+        $('.output').append("<li> Im sorry, Dave. I'm afraid I can't do that</li>");
       } else if (number.indexOf('2') > -1) {
-        console.log('Boop!');
-        return;
+        $('.output').append('<li> BOOP! </li>');
       } else if (number.indexOf('1') > -1) {
-        console.log('Beep!');
-        return;
+        $('.output').append('<li> BEEP! </li>');
       } else {
-        console.log(i);
+        $('.output').append('<li>' + i + '</li>');
+        return;
       }
     });
   };
@@ -26,8 +24,6 @@ $(document).ready(function () {
   $('#formOne').submit(function (event) {
     event.preventDefault();
     var userInput = parseInt($('#input').val());
-    var answer = beepBoop(userInput)
-    $('.output').html("<li>" + answer + "</li>");
-    console.log(answer);
+    beepBoop(userInput);
   });
 });
