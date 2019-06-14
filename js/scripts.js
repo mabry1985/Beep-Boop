@@ -28,5 +28,6 @@ $(document).ready(function () {
     $('ul.output').empty();
     var userInput = parseInt($('#input').val());
     beepBoop(userInput);
+    $('#input').val('');
   });
 });
