@@ -25,8 +25,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 | The program returns a range of numbers from 0 to the users inputted number | 4 | 0,1,2,3,4 |
 | The program looks for the number 3 and replaces it with "I'm sorry, Dave..." | 3 | I'm sorry, Dave... |
 | The program looks for the number 2 and replaces it with "Boop!" | 2 | Boop! |
-| The program looks for the number 1 and replaces it with "Beep!" | 1 | Beep! | 
-
+| The program looks for the number 1 and replaces it with "Beep!" | 1 | Beep! |
+| The program looks for a 3, 2, or 1 in any of the digits as it counts and returns respective output | 10,20,30 | Beep! Boop!, I'm sorry, Dave... | 
 
 
 

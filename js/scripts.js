@@ -1,13 +1,19 @@
 function beepBoop(userNumber) {
-  for (var index = 0; index < userNumber + 1; index++) {
-    if (index === 3) {
-      console.log(`Im sorry, Dave. I'm afraid I can't do that.`);
-    } else if (index === 2) {
-      console.log('Boop!');
-    } else if (index === 1) {
-      console.log('Beep!');
-    } else {
-      console.log(index);
-    }
-  }
+  for (var i = 0; i < userNumber + 1; i++) {
+    var numbers = i.toString().split(' ');
+    numbers.forEach(function (number) {
+      if (number.indexOf('3') > -1) {
+        console.log(`I'm sorry, Dave. I'm afraid I can't do that.`);
+        return;
+      } else if (number.indexOf('2') > -1) {
+        console.log('Boop!');
+        return;
+      } else if (number.indexOf('1') > -1) {
+        console.log('Beep!');
+        return;
+      } else {
+        console.log(i);
+      }
+    });
+  };
 };
