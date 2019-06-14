@@ -4,17 +4,30 @@ background-color: transparent;
 
 #floating {
   display: block;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 20px;
+  max-width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 150px;
   z-index: 100;
   position: fixed;
-  background-color:rgb(158, 226, 130);
+  background-image: url("../img/robot.jpg");
+  background-size: cover;
 }
 
 #formOne {
-padding-left; 40px;
+padding-left; 40px;S
 
+}
+
+.output-box {
+  left:500px;
+  top:650px;
+  position: relative;
+  height:120px;
+  width:120px;
+  border:1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow:auto
 }
 
 ul {
