@@ -23,6 +23,7 @@ function beepBoop(userNumber) {
 $(document).ready(function () {
   $('#formOne').submit(function (event) {
     event.preventDefault();
+    $('ul.output').empty();
     var userInput = parseInt($('#input').val());
     beepBoop(userInput);
   });
