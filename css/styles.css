@@ -1,3 +1,22 @@
+.jumbotron {
+background-color: transparent;
+}
+
+#floating {
+  display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px;
+  z-index: 100;
+  position: fixed;
+  background-color:rgb(158, 226, 130);
+}
+
+#formOne {
+padding-left; 40px;
+
+}
+
 ul {
   list-style: none;
 }

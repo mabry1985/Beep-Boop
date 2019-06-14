@@ -22,7 +22,7 @@ _This application takes a number from a user and counts up to it one at a time. 
 | The program looks for the number 2 and replaces it with "Boop!" | 2 | Boop! |
 | The program looks for the number 1 and replaces it with "Beep!" | 1 | Beep! |
 | The program looks for a 3, 2, or 1 in any of the digits as it counts and returns respective output | 10,20,30 | Beep! Boop!, I'm sorry, Dave... |
-| The program returns the output to the user in the DOM | 3 | Beep! Boop!, I'm sorry, Dave... is printed to index.html |
+| The program returns the output to the user in the DOM | 3 | 0, Beep!, Boop!, I'm sorry, Dave... is printed to index.html |
 
 
 ## Known Bugs
