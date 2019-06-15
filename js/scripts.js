@@ -24,6 +24,7 @@ $(document).ready(function () {
   $('#formOne').submit(function (event) {
     event.preventDefault();
     $('ul.output').empty();
+    $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     beepBoop(userInput);
     if (userInput === 1980) {
