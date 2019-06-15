@@ -1,4 +1,4 @@
-//backend logic
+//backend//
 
 function beepBoop(userNumber) {
   for (var i = 0; i < userNumber + 1; i++) {
@@ -24,6 +24,7 @@ $(document).ready(function () {
   $('#formOne').submit(function (event) {
     event.preventDefault();
     $('ul.output').empty();
+    $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     beepBoop(userInput);
     if (userInput === 1980) {
