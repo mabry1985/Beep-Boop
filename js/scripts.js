@@ -27,7 +27,7 @@ $(document).ready(function () {
     $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     beepBoop(userInput);
-    if (userInput === 1980) {
+    if (parseInt(userInput) === 1980) {
       $('.easter-egg').show();
     };
 
