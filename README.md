@@ -12,7 +12,7 @@ _This application takes a number from a user and counts up to it one at a time. 
 
 * _Download folder_
 * _Open Index.html in your favorite browser (Chrome)_
-* _Enter a number and press the GO! button_
+* _Enter a number and press the FEEDME! button_
 ## Specs
 
 | Behavior | Input | Output |
