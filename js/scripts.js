@@ -27,9 +27,9 @@ function beepBoopReverse(userNumber) {
     var name = $('#name').val();
     numbers.forEach(function (number) {
       if (i % 3 === 0) {
-        $('.output').append('<li> Im sorry, ' + name + ", I'm afraid I can't do that.</li>");
+        $('.output').prepend('<li> Im sorry, ' + name + ", I'm afraid I can't do that.</li>");
       } else if (number.indexOf('3') > -1) {
-        $('.output').append("<li> Im sorry, Dave, I'm afraid I can't do that.</li>");
+        $('.output').prepend("<li> Im sorry, Dave, I'm afraid I can't do that.</li>");
       } else if (number.indexOf('2') > -1) {
         $('.output').prepend('<li> BOOP! </li>');
       } else if (number.indexOf('1') > -1) {
