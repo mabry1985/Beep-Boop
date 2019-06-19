@@ -22,40 +22,46 @@ function beepBoop(userNumber, name) {
 
 //frontend logic
 
+function display(numArr) {
+  numArr.forEach(function (numArr) {
+    $('ul.output').append(numArr + '<br>');
+  });
+}
+
+function reverse(numArr) {
+  numArr.forEach(function (numArr) {
+    $('ul.output').prepend(numArr + '<br>');
+  });
+}
+
+function easterEgg(userInput) {
+  if (userInput === 1980) {
+    $('.easter-egg').show();
+  };
+}
+
 $(document).ready(function () {
   $('#formOne').submit(function (event) {
     event.preventDefault();
-    $('ul.output').empty();
-    $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     var name = $('#name').val();
     var numArr = beepBoop(userInput, name);
-    numArr.forEach(function (numArr) {
-      $('ul.output').append(numArr + '<br>');
-    });
-
-    if (userInput === 1980) {
-      $('.easter-egg').show();
-    };
-
+    $('ul.output').empty();
+    $('.easter-egg').hide();
+    easterEgg(userInput);
+    display(numArr);
     $('#name').val('');
     $('#input').val('');
   });
 
   $('.reverse').click(function () {
-    $('ul.output').empty();
-    $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     var name = $('#name').val();
     var numArr = beepBoop(userInput, name);
-    numArr.forEach(function (numArr) {
-      $('ul.output').prepend(numArr + '<br>');
-    });
-
-    if (userInput === 1980) {
-      $('.easter-egg').show();
-    };
-
+    $('ul.output').empty();
+    $('.easter-egg').hide();
+    easterEgg(userInput);
+    reverse(numArr);
     $('#name').val('');
     $('#input').val('');
   });
