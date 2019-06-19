@@ -1,45 +1,23 @@
-//backend//
+//backend logic
 
-function beepBoop(userNumber) {
+function beepBoop(userNumber, name) {
+  var numArr = [];
   for (var i = 0; i < userNumber + 1; i++) {
-    var numbers = i.toString().split(' ');
-    var name = $('#name').val();
-    numbers.forEach(function (number) {
-      if (i % 3 === 0) {
-        $('.output').append('<li> Im sorry, ' + name + ", I'm afraid I can't do that.</li>");
-      } else if (number.indexOf('3') > -1) {
-        $('.output').append("<li> Im sorry, Dave, I'm afraid I can't do that.</li>");
-      } else if (number.indexOf('2') > -1) {
-        $('.output').append('<li> BOOP! </li>');
-      } else if (number.indexOf('1') > -1) {
-        $('.output').append('<li> BEEP! </li>');
-      } else {
-        $('.output').append('<li>' + i + '</li>');
-        return;
-      }
-    });
-  };
-};
+    var numbers = i.toString();
+    if (i % 3 === 0) {
+      numArr.push('Im sorry, ' + name + ", I'm afraid I can't do that.");
+    } else if (numbers.includes('3')) {
+      numArr.push("Im sorry, Dave, I'm afraid I can't do that.");
+    } else if (numbers.includes('2')) {
+      numArr.push('BOOP!');
+    } else if (numbers.includes('1')) {
+      numArr.push('BEEP!');
+    } else {
+      numArr.push(i);
+    }
+  }
 
-function beepBoopReverse(userNumber) {
-  for (var i = 0; i < userNumber + 1; i++) {
-    var numbers = i.toString().split(' ');
-    var name = $('#name').val();
-    numbers.forEach(function (number) {
-      if (i % 3 === 0) {
-        $('.output').prepend('<li> Im sorry, ' + name + ", I'm afraid I can't do that.</li>");
-      } else if (number.indexOf('3') > -1) {
-        $('.output').prepend("<li> Im sorry, Dave, I'm afraid I can't do that.</li>");
-      } else if (number.indexOf('2') > -1) {
-        $('.output').prepend('<li> BOOP! </li>');
-      } else if (number.indexOf('1') > -1) {
-        $('.output').prepend('<li> BEEP! </li>');
-      } else {
-        $('.output').prepend('<li>' + i + '</li>');
-        return;
-      }
-    });
-  };
+  return numArr;
 };
 
 //frontend logic
@@ -51,7 +29,11 @@ $(document).ready(function () {
     $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     var name = $('#name').val();
-    beepBoop(userInput);
+    var numArr = beepBoop(userInput, name);
+    numArr.forEach(function (numArr) {
+      $('ul.output').append(numArr + '<br>');
+    });
+
     if (userInput === 1980) {
       $('.easter-egg').show();
     };
@@ -65,7 +47,11 @@ $(document).ready(function () {
     $('.easter-egg').hide();
     var userInput = parseInt($('#input').val());
     var name = $('#name').val();
-    beepBoopReverse(userInput);
+    var numArr = beepBoop(userInput, name);
+    numArr.forEach(function (numArr) {
+      $('ul.output').prepend(numArr + '<br>');
+    });
+
     if (userInput === 1980) {
       $('.easter-egg').show();
     };
